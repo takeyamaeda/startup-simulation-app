@@ -190,7 +190,7 @@ export interface GameState {
 * 初期値: `users`: 120,000, `features`: 60, `marketing`: 65, `techDebt`: 5, `officeLevel`: 3
 
 
-* 競合3 (Tier 3): 株式会社Linc’well (CEO: 林 俊宏 / Prod: CLINIC FOR)
+* 競合3 (Tier 3): 株式会社Linc’well (CEO: 氷熊 大輝 / Prod: CLINIC FOR)
 * 初期値: `users`: 45,000, `features`: 38, `marketing`: 45, `techDebt`: 3, `officeLevel`: 2
 
 
