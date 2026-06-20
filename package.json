@@ -1,0 +1,44 @@
+{
+  "name": "startup-simulation-app",
+  "version": "1.0.0",
+  "description": "本システムは、プレイヤーがITスタートアップの創業者兼プロダクトマネージャー（PM）となり、限定されたリソースの中でプロダクトを成長させ、オフィスを拡張して組織をスケールさせながら、選択した業界の実名競合企業からシェアを奪い取って市場1位（Tier 1超え）を目指すターン制経営シミュレーションゲームである。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takeyamaeda/startup-simulation-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/takeyamaeda/startup-simulation-app/issues"
+  },
+  "homepage": "https://github.com/takeyamaeda/startup-simulation-app#readme",
+  "dependencies": {
+    "lucide-react": "^1.21.0",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "^3.8.1",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^26.0.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.9",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3"
+  }
+}

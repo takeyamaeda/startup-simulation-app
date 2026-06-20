@@ -1,0 +1,3 @@
+module.exports=[40165,a=>{a.v({className:"outfit_38692db7-module__pJDHIG__className",variable:"outfit_38692db7-module__pJDHIG__variable"})},27572,a=>{"use strict";var b=a.i(7997),c=a.i(40165);let d={className:c.default.className,style:{fontFamily:"'Outfit', 'Outfit Fallback'",fontStyle:"normal"}};null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",0,function({children:a}){return(0,b.jsx)("html",{lang:"ja",children:(0,b.jsx)("body",{className:`${d.variable} antialiased`,children:a})})},"metadata",0,{title:"Startup Simulation | IT起業シミュレーション",description:"ITスタートアップの創業者となり、リソースを管理し、オフィスを拡張し、競合からシェアを奪い取って市場1位を目指す経営シミュレーションゲーム。"}],27572)},50645,a=>{a.n(a.i(27572))}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__1ly_d01._.js.map

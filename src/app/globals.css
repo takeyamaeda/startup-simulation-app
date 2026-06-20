@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #040612;
+  --color-foreground: #f8fafc;
+  --color-card: rgba(10, 15, 30, 0.45);
+  --color-card-foreground: #ffffff;
+  --color-primary: #9333ea;
+  --color-primary-foreground: #ffffff;
+  --color-border: rgba(255, 255, 255, 0.04);
+}
+
+body {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 背景の発光球スポットライト */
+.bg-glow-spot-1 {
+  position: absolute;
+  top: -10%;
+  right: 15%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.12) 0%, rgba(147, 51, 234, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+.bg-glow-spot-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+}
+
+/* Glassmorphism panel styling */
+.glass-panel {
+  background: var(--color-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 高コントラストアクティブ枠 */
+.active-glow-purple {
+  border-color: #c084fc !important;
+  border-width: 2.5px !important;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.4) !important;
+  background-color: rgba(168, 85, 247, 0.08) !important;
+}
+
+.active-glow-blue {
+  border-color: #60a5fa !important;
+  border-width: 2.5px !important;
+  box-shadow: 0 0 18px rgba(96, 165, 250, 0.4) !important;
+  background-color: rgba(96, 165, 250, 0.08) !important;
+}
+
+.active-glow-green {
+  border-color: #34d399 !important;
+  border-width: 2.5px !important;
+  box-shadow: 0 0 18px rgba(52, 211, 153, 0.4) !important;
+  background-color: rgba(52, 211, 153, 0.08) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Premium Typography spacing */
+h1, h2, h3, h4 {
+  letter-spacing: -0.02em;
+}
+
+/* Premium micro-interactions */
+.btn-premium {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-premium::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.btn-premium:hover::after {
+  transform: translateX(100%);
+}
+.btn-premium:active {
+  transform: scale(0.97);
+}
+
+/* Custom glowing badge animations */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(147, 51, 234, 0.15), inset 0 0 5px rgba(147, 51, 234, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(147, 51, 234, 0.3), inset 0 0 8px rgba(147, 51, 234, 0.1);
+  }
+}
+
+.glowing-badge {
+  animation: glow-pulse 3s infinite;
+}
+
+/* Dot pulsing */
+@keyframes status-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.3;
+  }
+}
+.dot-pulse {
+  animation: status-pulse 2s infinite ease-in-out;
+}
